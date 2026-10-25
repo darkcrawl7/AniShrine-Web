@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-graphite text-ash font-sans antialiased;
+  background-image:
+    radial-gradient(ellipse at 15% -10%, rgba(185, 28, 44, 0.18), transparent 55%),
+    radial-gradient(ellipse at 90% 10%, rgba(185, 28, 44, 0.08), transparent 45%);
+  background-attachment: fixed;
+}
+
+:focus-visible {
+  @apply outline-none ring-2 ring-ember ring-offset-2 ring-offset-graphite rounded-md;
+}
+
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-md border border-white/10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 font-semibold text-white
+         shadow-[0_8px_30px_-8px_rgba(185,28,44,0.7)] transition
+         hover:bg-[#c92a3b] active:scale-[0.98]
+         disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-ash/50 disabled:shadow-none;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-semibold text-ash
+         transition hover:border-white/30 hover:bg-white/5 active:scale-[0.98];
+}
