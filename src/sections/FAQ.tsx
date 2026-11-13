@@ -6,7 +6,7 @@ import Reveal from "../components/Reveal";
 const QUESTIONS = [
   {
     q: "Is AniShrine free?",
-    a: "Pricing has not been finalized here. Check the download section for the latest details once a release is published.",
+    a: "Yes AniShrine is a free anime streaming app.",
   },
   {
     q: "Which Android versions are supported?",
