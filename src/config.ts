@@ -6,9 +6,9 @@
  *
  * The release fields are shown only when filled in. Do not invent values.
  */export const APK_DOWNLOAD_URL = "https://anishrine.pages.dev/anishrine.apk";
-export const APP_VERSION = "0.3.0";
-export const APK_FILE_SIZE = "6.7 MB";
-export const APK_RELEASE_DATE = "2026-11-13";
+export const APP_VERSION = "0.4.0";
+export const APK_FILE_SIZE = "6.8 MB";
+export const APK_RELEASE_DATE = "2026-11-15";
 export const APK_CHANGELOG: string[] = [];
 
 export const SUPPORT_URL = ""; // leave empty until you have a real support page or repo
